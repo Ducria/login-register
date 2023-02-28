@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="styleRegiser.css">
+</head>
+<body>
+    <section>
+        <div id="form-box">
+            <div id="form-value">
+                <form action="">
+                    <h2>Register</h2>
+                    <div id="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input id="name"type="text" onblur="validarNome()">
+                        <label for="">Name</label>
+                        <span id="error-name"></span>
+                    </div>
+                    <div id="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type="email" onblur="validarEmail()">
+                        <label for="">Email</label>
+                        <span id="error-email"></span>
+                    </div>
+                    <div id="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="password"type="password" onblur="validarSenha()">
+                        <label for="">Password</label>
+                        <span id="error-password"></span>
+                    </div>
+                    <button id="createbtn" onclick="verificarR()">Create</button>
+                    <div id="register">
+                        <p>You already have an account?<a href="index.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

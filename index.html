@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div id="form-box">
+            <div id="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div id="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email"type="email">
+                        <label for="">Email</label>
+                    </div>
+                    <div id="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="password"type="password">
+                        <label for="">Password</label>
+                    </div>
+                    <div id="forget">
+                        <label for=""><input type="checkbox">Remember me <a href="#">Forget password</a></label>
+                    </div>
+                    <button id="loginbtn" onclick="verificarL()">Login</button>
+                    <div id="register">
+                        <p>Don't have a account?<a href="register.html">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
